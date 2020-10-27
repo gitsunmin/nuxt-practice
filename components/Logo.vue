@@ -1,14 +1,20 @@
 <template>
   <div class="VueToNuxtLogo">
-    <v-btn @click="inClick">저는... 버튼입니다..</v-btn>
+    <v-btn @click="onClick">Logo라는 버튼 {{ name }}</v-btn>
   </div>
 </template>
 
 <script>
 export default {
   name: 'Logo',
+  props: {
+    name: {
+      type: String,
+      default: () => 'sitmin',
+    },
+  },
   methods: {
-    inClick() {
+    onClick() {
       this.$emit('emitClick');
     }
   }

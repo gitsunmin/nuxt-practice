@@ -74,20 +74,19 @@ export default {
     stories: [
       '~/components/**/*.story.js',
     ],
+    addons: [
+      '@storybook/addon-actions',
+      '@storybook/addon-backgrounds',
+      '@storybook/addon-docs',
+      '@storybook/addon-essentials',
+      '@storybook/addon-knobs',
+      '@storybook/addon-links',
+      '@storybook/addon-toolbars',
+      '@storybook/addon-viewport',
+      '@storybook/addon-controls',
+      '@storybook/addon-notes',
+    ],
   },
-  
-  // addons: [
-  //   '@storybook/addon-actions',
-  //   '@storybook/addon-backgrounds',
-  //   '@storybook/addon-docs',
-  //   '@storybook/addon-essentials',
-  //   '@storybook/addon-knobs',
-  //   '@storybook/addon-links',
-  //   '@storybook/addon-toolbars',
-  //   '@storybook/addon-viewport',
-  //   '@storybook/addon-controls',
-  //   '@storybook/addon-notes',
-  // ],
   // parameters: {
   //   background: {
   //     default: 'white',
@@ -97,6 +96,7 @@ export default {
   //     ],
   //   }
   // },
+  
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
 }
